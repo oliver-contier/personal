@@ -3,7 +3,6 @@ title: "Research"
 output: html_document
 ---
 
-
 I started out as an undergraduate student of Psychology at Trier University, Germany, where I became especially fascinated with Social Psychology. Eventually, I joined the [Social Psyc lab](https://www.uni-trier.de/index.php?id=5803&L=2) as a student assistant where I came to love the meticulous planning that goes along with experimental Psychology. My final thesis addressed how long-term memory influences the integration of an object’s features into a wholesome perceptual experience. My advisors were [Eva Walter](https://www.uni-trier.de/index.php?id=21130&L=2) and [Katarina Blask](https://www.uni-trier.de/index.php?id=33444&L=2).
 
 I spent some time at the [Max-Planck-Institute for Human Cognitive and Brain Sciences](http://www.cbs.mpg.de/de) in Leipzig, Germany, where I worked with the research group directed by [Tom Fritz](http://www.cbs.mpg.de/departments/neurology/music-evoked-brain-plasticity) The small research project I conducted here was moving along the intersection of Neuroscience and the study of music. As an enthusiast of both, this was an amazing opportunity and I came to appreciate the truly close relationship between art and science.
