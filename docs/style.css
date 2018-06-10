@@ -1,0 +1,33 @@
+p {
+  font-size: 1.15em;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+}
+
+.hangingindent{
+  padding-left: 50px ;
+  text-indent: -50px ;
+}
+
+.condensedlines{
+  line-height:1.5;
+}
+
+.russiannovel{
+  width:100%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:justify
+}
+
+.russiannovelnarrow{
+  width:70%;
+  margin-left:auto;
+  margin-right:auto;
+  text-align:justify
+}

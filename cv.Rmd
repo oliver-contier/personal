@@ -1,49 +1,73 @@
 ---
-title: "CV"
 output: html_document
 ---
+
+<br/>
 
 You may find a PDF version of my CV
 <a target="_blank" HREF="images/cv_contier.pdf"> here</a>
 
+<br/>
 
-### Education
+## Current position
 
+<br/>
 
-#### Master of Science: Psychology
+<p class="condensedlines">**PhD Student**<br/>Otto-von-Guericke University Magdeburg<br/>Department for Experimental Psychology</p>
 
-**Otto-von-Guericke University Magdeburg**
+<br/>
 
-2014 - 2018
+## Education
 
-Emphasis: Cognitive Neuroscience
+<br/>
 
+### Master of Science: Psychology
+<p class="condensedlines">**Otto-von-Guericke University Magdeburg**<br/>2014 - 2018<br/>Emphasis: Cognitive Neuroscience</p>
 
-#### Bachelor of Science: Psychology
+### Bachelor of Science: Psychology
+<p class="condensedlines">**Trier University**<br/>2010 - 2014</p>
 
-**Trier University**
+<br/>
 
-2010 - 2014
+## Theses
 
+<br/>
 
-### Theses
+### Master Thesis
+<p class="condensedlines">*Temporal dynamics of familiar face recognition*<br/>Advisors: J.-Prof. Michael Hanke, Dr. Yaroslav Halchenko</p>
 
+### Bachelor Thesis
+<p class="condensedlines">*Top-down modulation of feature integration by long term memory*<br/>Advisors: Prof. Eva Walther, Dr. Katarina Blask</p>
 
-#### Master Thesis
-*Temporal dynamics of familiar face recognition*
+<br/>
 
-Advisors: J.-Prof. Michael Hanke, Dr. Yaroslav Halchenko
+## Scholarships
 
+<br/>
 
-#### Bachelor Thesis
-*Top-down modulation of feature integration by long term memory*
-
-Advisors: Prof. Eva Walther, Dr. Katarina Blask
-
-
-### Scholarships
-
-
-#### PROMOS scholarship
-
+### PROMOS scholarship
 German Academic Exchange Service (DAAD)
+
+<br/>
+
+## Research experience
+
+<br/>
+
+### Dartmouth College
+<p class="condensedlines">2017<br/>**Research Intern**<br/>Department for Psychological and Brain Sciences (Haxbylab)<br/>Supervisors: Prof. Yaroslav O. Halchenko, Prof. James V. Haxby</p>
+
+### Otto-von-Guericke University Magdeburg
+<p class="condensedlines">2016 - 2017<br/>**Research Assistant**<br/>Department for Experimental Psychology<br/>Principle Investigator: Prof. Stefan Pollmann</p>
+
+### Max Planck Institute for Human Cognitive and Brain Sciences
+<p class="condensedlines">2014 - 2016<br/>**Visiting Researcher**<br/>Department of Neurology - Research group: Music Evoked Brain Plasticity<br/>Principle Investigator: Prof. Thomas H. Fritz</p>
+
+### Neurological Rehabilitation Center Leipzig
+<p class="condensedlines">2014<br/>**Clinical Intern**<br/>Department of Neuropsychology<br/>Supervisor: Dr. Hendrik Niemann</p>
+
+### Trier University
+<p class="condensedlines">2012 - 2014<br/>**Student Assistant**<br/>Department of Social Psychology<br/>Principle Investigator: Prof. Eva Walther</p>
+
+### Trier University
+<p class="condensedlines">2014<br/>**Research Intern**<br/>Department Clinical and Physiological Psychology<br/>Principle Investigator: Prof. Dirk Hellhammer</p>

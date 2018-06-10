@@ -1,10 +1,12 @@
 ---
-title: "About me"
 output: html_document
 ---
 
-<img src="images/me.png" width="250">
+<br/>
 
-This is my introductory text. I'm a super cool PhD student and everyone should like me.
+<img src="images/me.png" class="center">
 
-I work at [this institute](http://www.ipsy.ovgu.de/en/exppsy.html)
+<br/>
+
+<p class="russiannovelnarrow">I am a PhD Student in the Department for [Experimental Psychology](http://www.ipsy.ovgu.de/en/exppsy.html) at the [Otto-von-Guericke University Magdeburg](https://www.uni-magdeburg.de/en/). I am interested in studying how cognitive phenomena of visual perception might be represented and integrated in the human brain. To that end, I analyze functional neuroimaging data.</p>
+
