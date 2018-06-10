@@ -6,7 +6,9 @@ output: html_document
 You may find a PDF version of my CV
 <a target="_blank" HREF="images/cv_contier.pdf"> here</a>
 
+
 ### Education
+
 
 #### Master of Science: Psychology
 
@@ -16,25 +18,32 @@ You may find a PDF version of my CV
 
 Emphasis: Cognitive Neuroscience
 
+
 #### Bachelor of Science: Psychology
 
 **Trier University**
 
 2010 - 2014
 
+
 ### Theses
+
 
 #### Master Thesis
 *Temporal dynamics of familiar face recognition*
 
 Advisors: J.-Prof. Michael Hanke, Dr. Yaroslav Halchenko
 
+
 #### Bachelor Thesis
 *Top-down modulation of feature integration by long term memory*
 
 Advisors: Prof. Eva Walther, Dr. Katarina Blask
 
+
 ### Scholarships
+
+
 #### PROMOS scholarship
 
 German Academic Exchange Service (DAAD)
