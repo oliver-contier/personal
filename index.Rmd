@@ -1,8 +1,8 @@
 ---
 title: "personalpage"
-#author: "Oliver Contier"
-#date: "10 6 2018"
-#output: html_document
+author: "Oliver Contier"
+date: "10 6 2018"
+output: html_document
 ---
 
 This is my introductory text. I'm a super cool PhD student and everyone should like me.
