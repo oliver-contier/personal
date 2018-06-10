@@ -3,5 +3,29 @@ title: "CV"
 output: html_document
 ---
 
-
+You may find a PDF version of my CV
 <a target="_blank" HREF="images/cv_contier.pdf"> here</a>
+
+## Education
+
+2014 - 2018
+*Otto-von-Guericke University Magdeburg*
+Master of Science: Psychology
+Emphasis: Cognitive Neuroscience
+
+2010 - 2014
+*Trier University*
+Bachelor of Science: Psychology
+
+## Theses
+*Master Thesis*
+**Temporal dynamics of familiar face recognition**
+Advisors: J.-Prof. Michael Hanke, Dr. Yaroslav Halchenko
+
+*Bachelor Thesis*
+**Top-down modulation of feature integration by long term memory**
+Advisors: Prof. Eva Walther, Dr. Katarina Blask
+
+## Scholarships
+*PROMOS scholarship*
+German Academic Exchange Service (DAAD)
