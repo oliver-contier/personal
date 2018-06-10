@@ -8,3 +8,8 @@ output:
     css: style.css
 navbar:  
   title: "Oliver Contier, M.Sc." 
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "The long story"
+      href: research.html
