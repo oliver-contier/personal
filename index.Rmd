@@ -3,7 +3,7 @@ title: "About me"
 output: html_document
 ---
 
-![](images/me.png)
+![](images/me.png =20)
 
 This is my introductory text. I'm a super cool PhD student and everyone should like me.
 
