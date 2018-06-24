@@ -19,4 +19,4 @@ output: html_document
 
 <br/>
 
-<p class="hangingindent"> **Contier, O.**, Visconti di Oleggio Castello, M., Gobbini, M. I., Halchenko, Y. O. (2018, June). *Temporal dynamics and effective connectivity in the distributed system of familiar face processing*. Organization for Human Brain Mapping (OHBM) 2018 Annual Meeting, Singapore. <a href="https://doi.org/10.3758/s13414-017-1397-3"> http://dx.doi.org/10.13140/RG.2.2.17076.96640</a>
+<p class="hangingindent"> **Contier, O.**, Visconti di Oleggio Castello, M., Gobbini, M. I., Halchenko, Y. O. (2018, June). *Temporal dynamics and effective connectivity in the distributed system of familiar face processing*. Organization for Human Brain Mapping (OHBM) 2018 Annual Meeting, Singapore. <a href="http://dx.doi.org/10.13140/RG.2.2.17076.96640"> http://dx.doi.org/10.13140/RG.2.2.17076.96640</a>
