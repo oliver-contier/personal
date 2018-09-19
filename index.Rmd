@@ -4,12 +4,13 @@ output: html_document
 
 <br/>
 
-
 <img src="images/me.png" class="center">
 
 <br/>
 
-<p class="russiannovelnarrow">I am a PhD Student in the Department for [Experimental Psychology](http://www.ipsy.ovgu.de/en/exppsy.html) at [Otto-von-Guericke University Magdeburg](https://www.uni-magdeburg.de/en/). I am interested in studying how cognitive phenomena of visual perception might be represented and integrated in the human brain. To that end, I analyze functional neuroimaging data.</p>
+<p class="russiannovelnarrow">
+As a PhD student in the [Department for Experimental Psychology](http://www.ipsy.ovgu.de/en/exppsy.html) at [Otto-von-Guericke University Magdeburg](https://www.uni-magdeburg.de/en/) and part of the [center for behavioral brain science](http://www.cbbs.eu/en/), I'm interested in how certain phenomena of visual processing are implemented in the human brain. To that end, I like to analyze functional neuroimaging data. Beyond all things neuroscience, I love computers, books, jazz guitar, and <a target="_blank" HREF="images/klaus.jpg">my friendly dinosaur</a>.
+</p>
 
 <br/>
 
