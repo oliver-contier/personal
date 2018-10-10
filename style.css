@@ -1,6 +1,14 @@
 p {
   font-size: 1.15em;
+  font-family: Garamond, Georgia, serif;
 }
+
+h1 {
+  font-family: Garamond, Georgia, serif;
+  border-bottom: 1px solid black;
+}
+h2 {font-family: Garamond, Georgia, serif;}
+h3 {font-family: Garamond, Georgia, serif;}
 
 .center {
     display: block;
