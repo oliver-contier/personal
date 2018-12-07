@@ -9,7 +9,7 @@ output: html_document
 <br/>
 
 <p class="hangingindent">
-  Fritz, T. H., Schuette, F., Steixner, A., **Contier, O.**, Obrig, H., Villringer, A. (accepted). Musical meaning modulates word acquisition. *Brain and Language*.
+  Fritz, T. H., Schütte, F., Steixner, A., **Contier, O.**, Obrig, H., Villringer, A. (accepted). Musical meaning modulates word acquisition. *Brain and Language*.
 </p>
 
 <p class="hangingindent">
