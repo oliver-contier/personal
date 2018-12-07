@@ -9,6 +9,10 @@ output: html_document
 <br/>
 
 <p class="hangingindent">
+  Fritz, T. H., Schuette, F., Steixner, A., **Contier, O.**, Obrig, H., Villringer, A. (accepted). Musical meaning modulates word acquisition. *Brain and Language*.
+</p>
+
+<p class="hangingindent">
   Fritz, T. H. , Bowling, D. L., **Contier, O.**, Grant, J., Schneider, L., Lederer, A., Hoer, F. , Busch, E., & Villringer, A. (2018). Musical agency during exercise decreases pain. *Frontiers in Psychology*. <a href="https://doi.org/10.3389/fpsyg.2017.02312"> https://doi.org/10.3389/fpsyg.2017.02312</a>
 </p>
 

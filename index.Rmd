@@ -4,9 +4,13 @@ output: html_document
 
 <br/>
 
-<img src="images/me.png" class="center">
+<a class="center">
+   <img src="images/me.png" /> 
+   <img src="images/me_with_eyepatch.png" />
+</a>
 
 <br/>
+
 
 <p class="russiannovelnarrow">
 As a PhD student in the [Department for Experimental Psychology](http://www.ipsy.ovgu.de/en/exppsy.html) at [Otto-von-Guericke University Magdeburg](https://www.uni-magdeburg.de/en/) and part of the [center for behavioral brain science](http://www.cbbs.eu/en/), I'm interested in how certain phenomena of visual processing are implemented in the human brain. To that end, I like to analyze functional neuroimaging data. Beyond all things neuroscience, I love computers, books, jazz guitar, and <a target="_blank" HREF="images/klaus.jpg">my friendly dinosaur</a>.

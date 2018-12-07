@@ -5,7 +5,7 @@ output: html_document
 <br/>
 
 You may find a PDF version of my CV
-<a target="_blank" HREF="images/cv_contier.pdf"> here</a>
+<a target="_blank" HREF="images/cv_contier_website.pdf"> here</a>
 
 <br/>
 
