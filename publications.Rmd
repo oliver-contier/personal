@@ -10,7 +10,7 @@ output: html_document
 <br/>
 
 <p class="hangingindent"; charset="utf-8">
-  Fritz, T. H., Sch&uuml;tte, F., Steixner, A., **Contier, O.**, Obrig, H., Villringer, A. (accepted). Musical meaning modulates word acquisition. *Brain and Language*.
+  Fritz, T. H., Sch&uuml;tte, F., Steixner, A., **Contier, O.**, Obrig, H., Villringer, A. (2019). Musical meaning modulates word acquisition. *Brain and Language*. <a href="https://doi.org/10.1016/j.bandl.2018.12.001"> https://doi.org/10.1016/j.bandl.2018.12.001</a>
 </p>
 
 <p class="hangingindent">
