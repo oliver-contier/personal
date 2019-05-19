@@ -1,14 +1,3 @@
-a img:last-child {
-  display: none;  
-}
-a:hover img:last-child {
-  display: block;  
-}
-a:hover img:first-child {
-  display: none;  
-}
-
-
 p {
   font-size: 1.15em;
   font-family: Garamond, Georgia, serif;

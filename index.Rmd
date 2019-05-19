@@ -5,24 +5,20 @@ output: html_document
 <br/>
 
 <a class="center">
-   <img src="images/me.png" /> 
-   <img src="images/me_with_eyepatch.png" />
+  <img src="images/me.png" />
 </a>
 
 <br/>
 
-
 <p class="russiannovelnarrow">
-As a PhD student in the [Department for Experimental Psychology](http://www.ipsy.ovgu.de/en/exppsy.html) at [Otto-von-Guericke University Magdeburg](https://www.uni-magdeburg.de/en/) and part of the [center for behavioral brain science](http://www.cbbs.eu/en/), I'm interested in how certain phenomena of visual processing are implemented in the human brain. To that end, I like to analyze functional neuroimaging data. Beyond all things neuroscience, I love computers, books, jazz guitar, and <a target="_blank" HREF="images/klaus.jpg">my friendly dinosaur</a>.
+  As a PhD student in the [Department for Experimental Psychology](http://www.ipsy.ovgu.de/en/exppsy.html) at [Otto-von-Guericke University Magdeburg](https://www.uni-magdeburg.de/en/) and part of the [center for behavioral brain science](http://www.cbbs.eu/en/), I'm interested in how certain phenomena of visual processing are implemented in the human brain. To that end, I like to analyze functional neuroimaging data. Beyond all things neuroscience, I love computers, books, jazz guitar, and <a target="_blank" HREF="images/klaus.jpg">my friendly dinosaur</a>.
 </p>
 
 <br/>
 
 <div valign="center" align="center">
-
-<a target="_blank" href="https://github.com/oliver-contier/"><img src="images/ghlogo.png" style="width:15%"></a>
-<a target="_blank" href="https://twitter.com/OliverContier"><img src="images/twlogo.png" style="width:10%"></a>
-<a target="_blank" href="https://www.researchgate.net/profile/Oliver_Contier"><img src="images/rglogo.png" style="width:10%"></a>
-<a target="_blank" href="https://www.linkedin.com/in/oliver-contier/"><img src="images/linklogo.png" style="width:7%"></a>
-
+  <a target="_blank" href="https://github.com/oliver-contier/"><img src="images/ghlogo.png" style="width:15%"></a>
+  <a target="_blank" href="https://twitter.com/OliverContier"><img src="images/twlogo.png" style="width:10%"></a>
+  <a target="_blank" href="https://www.researchgate.net/profile/Oliver_Contier"><img src="images/rglogo.png" style="width:10%"></a>
+  <a target="_blank" href="https://www.linkedin.com/in/oliver-contier/"><img src="images/linklogo.png" style="width:7%"></a>
 </div>
