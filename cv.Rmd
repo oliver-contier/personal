@@ -3,85 +3,9 @@ output: html_document
 ---
 
 <br/>
+<br/>
 
 You may find a PDF version of my CV
 <a target="_blank" HREF="images/cv_contier_website.pdf"> here</a>
 
-<br/>
 
-# Current position
-
-<br/>
-
-<p class="condensedlines">PhD Student<br/>Otto-von-Guericke University Magdeburg<br/>Department for Experimental Psychology</p>
-
-<br/>
-
-# Education
-
-<br/>
-
-### Master of Science: Psychology
-<p class="condensedlines">Otto-von-Guericke University Magdeburg<br/>2014 - 2018<br/>Emphasis: Cognitive Neuroscience</p>
-
-<br/>
-
-### Bachelor of Science: Psychology
-<p class="condensedlines">Trier University<br/>2010 - 2014</p>
-
-<br/>
-
-# Theses
-
-<br/>
-
-### Master Thesis
-<p class="condensedlines">*Temporal dynamics of familiar face recognition*<br/>Advisors: J.-Prof. Michael Hanke, Dr. Yaroslav Halchenko</p>
-
-<br/>
-
-### Bachelor Thesis
-<p class="condensedlines">*Top-down modulation of feature integration by long term memory*<br/>Advisors: Prof. Eva Walther, Dr. Katarina Blask</p>
-
-<br/>
-
-# Scholarships
-
-<br/>
-
-### PROMOS Scholarship
-German Academic Exchange Service (DAAD)
-
-<br/>
-
-# Research Experience
-
-<br/>
-
-### Dartmouth College
-<p class="condensedlines">2017<br/>Research Intern<br/>Department for Psychological and Brain Sciences (Haxbylab)<br/>Supervisors: Prof. Yaroslav O. Halchenko, Prof. James V. Haxby</p>
-
-<br/>
-
-### Otto-von-Guericke University Magdeburg
-<p class="condensedlines">2016 - 2017<br/>Research Assistant<br/>Department for Experimental Psychology<br/>Principle Investigator: Prof. Stefan Pollmann</p>
-
-<br/>
-
-### Max Planck Institute for Human Cognitive and Brain Sciences
-<p class="condensedlines">2014 - 2016<br/>Visiting Researcher<br/>Department of Neurology - Research group: Music Evoked Brain Plasticity<br/>Principle Investigator: Prof. Thomas H. Fritz</p>
-
-<br/>
-
-### Neurological Rehabilitation Center Leipzig
-<p class="condensedlines">2014<br/>Clinical Intern<br/>Department of Neuropsychology<br/>Supervisor: Dr. Hendrik Niemann</p>
-
-<br/>
-
-### Trier University
-<p class="condensedlines">2012 - 2014<br/>Student Assistant<br/>Department of Social Psychology<br/>Principle Investigator: Prof. Eva Walther</p>
-
-<br/>
-
-### Trier University
-<p class="condensedlines">2014<br/>Research Intern<br/>Department Clinical and Physiological Psychology<br/>Principle Investigator: Prof. Dirk Hellhammer</p>
