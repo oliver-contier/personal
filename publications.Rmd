@@ -14,7 +14,7 @@ output: html_document
 </p>
 
 <p class="hangingindent">
-  Fritz, T. H., Bowling, D. L., **Contier, O.**, Grant, J., Schneider, L., Lederer, A., Hoer, F. , Busch, E., & Villringer, A. (2018). Musical agency during exercise decreases pain. *Frontiers in Psychology*. <a href="https://doi.org/10.3389/fpsyg.2017.02312"> https://doi.org/10.3389/fpsyg.2017.02312</a>
+  Fritz, T. H., Bowling, D. L., **Contier, O.**, Grant, J., Schneider, L., Lederer, A., Hoer, F., Busch, E., & Villringer, A. (2018). Musical agency during exercise decreases pain. *Frontiers in Psychology*. <a href="https://doi.org/10.3389/fpsyg.2017.02312"> https://doi.org/10.3389/fpsyg.2017.02312</a>
 </p>
 
 

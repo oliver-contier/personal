@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
 
 <head>
 
 <meta charset="utf-8" />
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
 
 
 
 
-<title></title>
+<title>index.utf8</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -70,9 +70,7 @@ h6 {
 
 <link rel="stylesheet" href="style.css" type="text/css" />
 
-</head>
 
-<body>
 
 <style type = "text/css">
 .main-container {
@@ -86,7 +84,6 @@ code {
 }
 img {
   max-width:100%;
-  height: auto;
 }
 .tabbed-pane {
   padding-top: 12px;
@@ -191,8 +188,6 @@ $(document).ready(function () {
 });
 </script>
 
-<div class="container-fluid main-container">
-
 <!-- tabsets -->
 
 <style type="text/css">
@@ -237,6 +232,7 @@ $(document).ready(function () {
   border: none;
   display: inline-block;
   border-radius: 4px;
+  background-color: transparent;
 }
 
 .tabset-dropdown > .nav-tabs.nav-tabs-open > li {
@@ -249,20 +245,17 @@ $(document).ready(function () {
 }
 </style>
 
-<script>
-$(document).ready(function () {
-  window.buildTabsets("TOC");
-});
-
-$(document).ready(function () {
-  $('.tabset-dropdown > .nav-tabs > li').click(function () {
-    $(this).parent().toggleClass('nav-tabs-open')
-  });
-});
-</script>
-
 <!-- code folding -->
 
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
 
 
 
@@ -291,6 +284,9 @@ $(document).ready(function () {
 <li>
   <a href="research.html">The long story</a>
 </li>
+<li>
+  <a href="blog.html">Blog</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         
@@ -308,7 +304,7 @@ $(document).ready(function () {
 
 
 <p><br/> <br/></p>
-<p><a class="center"> <img src="images/me_professional.jpg" /> </a></p>
+<p><a class="center"> <img src="images/me_mps.jpg"> </a></p>
 <p><br/> <br/></p>
 <p class="russiannovelnarrow">
 <p>As a PhD student in cognitive neuroscience, I am interested in how the human brain manages to represent the complex, volatile, and highdimensional world we find ourselves in. Recent advances in the field have provided exciting tools to map the structure of the perceived world to patterns of brain activity. This has put scientific models of mental representation within reach, yet our knowledge is still expanding and shifting constantly. I am currently a student within the newly founded <a href="https://www.maxplanckschools.de/en/cognition">Max Planck School of Cognition</a>. Here, I am preparing for a long-lasting career to keep adding to these questions. Another focus of mine lies in using and contributing to <a href="http://centerforopenneuroscience.org/">frameworks that promote reproducibility, transparency, and general best practice in the analysis of neuroimaging data</a> (specifically fMRI). Beyond all things neuroscience, I love computers, books, jazz guitar, and <a target="_blank" HREF="images/klaus.jpg">my friendly dinosaur</a>.</p>
@@ -335,6 +331,23 @@ $(document).ready(function () {
 
 
 </script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

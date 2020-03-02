@@ -17,3 +17,5 @@ navbar:
       href: publications.html
     - text: "The long story"
       href: research.html
+    - text: "Blog"
+      href: blog.html

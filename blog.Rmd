@@ -1,0 +1,154 @@
+---
+#title: "My first blog entry"
+#author: "Oliver Contier"
+#date: "2/28/2020"
+output: html_document
+---
+<br/>
+<br/>
+
+# Getting started with HTCondor for data analysis
+
+*Oliver Contier*
+
+*2/28/2020*
+<br/>
+<br/>
+
+I love analyzing data. It's one of my favorite aspects of the job as doctoral student in cognitive neuroscience, and I have a hunch many scientists feel the same. Coming up with methods that make sense of the raw numbers coming out of our measurements can feel like detective work and feel intrinsically rewarding.
+
+However, the data we analyze is often too large for our laptops and run-times too long. So we migrate our data and analysis code to the computational cluster our university or institute is hosting. And here, everything is more complicated. The machinery you're trying to use now is shared by a dozen or more people and you have to put in some extra effort and play by the rules to make things run.
+
+One common piece of software I've had to get my grips on and which "governs" computational clusters is HTCondor. I've learned to use it through the help of my colleagues and have passed my humble knowledge on to other colleagues since then. To make things easier, I thought I'd release a summary for everybody.
+
+Now, you'll find <a href="https://research.cs.wisc.edu/htcondor/manual/" target="_blank">ample documentation</a> on the internet. You can find the relevant commands here along with some more detailed explanation. However - as with all good software - there is a ton of features which you might be confused by and which you'll likely not need in the beginning. So, to get you started, I thought I'd walk through a basic example of how to make your analysis run with Condor.
+
+**Condor is a quite intelligent system that allows many users of a system to run computational jobs in parallel**. It tries to distribute the available resources in a safe, efficient, and somewhat fair manner to all jobs submitted by different users. Think of the jobs as convoys of trucks that want to drive from A to B and the computational resources as all the available lanes on the highway. **Condor is the traffic police.** You might curse at it sometimes but in the end, it will make your life easier.
+
+After you've successfully submitted your jobs to condor, you can disconnect from the cluster, close the terminal, or set your workstation on fire. None of which will terminate your processes.
+
+Let's imagine a scenario: Luke and Lea are both PhD students at a top-notch research institution. They work on different projects, but both want to use the computational cluster. **Lea wants to run preprocessing on her fMRI data with 30 subjects** and Luke wants to do ... something else. The point is, they both want to do a lot of computations! The computing cluster has 15 nodes available, each of which has some fixed amount of memory.
+
+Before Luke or Lea get to work, they check what the weather is like today on the cluster. They open a terminal and type ...
+```bash
+condor_status
+```
+... which shows them how many computing nodes there are, and how many of them are still free or already in use. They can also type ...
+```bash
+condor_q
+```
+... which shows them if they themselves have some running jobs and what their status is. Adding the `--nobatch` flag lets them see all their jobs individually instead of a summary.
+
+Now, Lea gets to work. Her analysis is in a python file called `preprocessing.py`:
+
+```python
+#! /usr/env/python
+
+import time
+import sys
+
+# the script gets the subject ID as an input argument
+subject_id = sys.argv[1]
+
+print('beep bleep bloop, starting preprocessing')
+
+time.wait(60*60*24)  # complicated calculations going on for 24 hours
+
+print('bing bong, finished subject: ', subject_id)
+```
+
+This script executes her preprocessing job for a single subject. She has debugged her code thoroughly and is quite confident it works. She can run the preprocessing for subject `sub-01` by typing the following in the terminal:
+
+```bash
+python preprocessing.py sub-01
+```
+
+Specifying the subject ID as the input argument for her script is important, as **iterating over input arguments is a simple way to realize paralelization**. And she really wansts to run the jobs for as many subjects as possible in parallel, as each one of them takes 24 hours to finish! 
+
+Some more details on input arguments: Note how the python code sais `subject_id = sys.argv[1]`. sys.argv can grab the input arguments which the python executable received. `sys.argv[0]` represents the 0th argument (in our case "preprocessing.py"). `sys.argv[1]` represents the 1st argument (in our example `sub-01`). This is specific for python of course, but other languages/frameworks like bash or matlab could work in a similar manner.
+
+To run her jobs on the cluster, Lea does **not** execute her script directly. She writes a submission file for condor and calls it `preprocessing.submit`. The simplest version of such a file may look something like this:
+
+```bash
+universe = vanilla
+executable = /usr/bin/python3  # She wants to run her script with this python version
+
+# She can specify where condor should write some text files for 
+# error messages, outputs, and logs of the submitted job status.
+
+error = /home/lea/preprocessing.err
+output = /home/lea/preprocessing.out
+log = /home/lea/preprocessing.log
+
+# Here is the important stuff for paralellization 
+arguments = /home/lea/preprocessing.py sub-01
+queue
+arguments = /home/lea/preprocessing.py sub-02
+queue
+arguments = /home/lea/preprocessing.py sub-03
+queue
+```
+<p class="russiannovel">
+
+Let's unpack this a bit. You can leave the `universe` line alone for now. the `executable` is important and might be the python or matlab version you want to use to execute your script. **However, executables can also be scripts you write yourself (e.g. a bash script, see <a href="https://github.com/oliver-contier/famface-temporal-dynamics/blob/master/analysis/extract_eigenvariate.submit" target="_blank">here</a>).**
+
+`error`, `output`, and `log` are not mandatory, but I would recommend it. Here, condor will put the error messages that are thrown, the standard output of your script (e.g. print/log statements), and some logging detail on how the whole job submission went. Having these helps debugging immensely.
+
+The `arguments` and `queue` statements are - finally - for **paralelization**. You see how the first argument (or 0th argument in python's way of counting) is always the path to Lea's preprocessing script. The second argument (i.e. 1st in python) changes depending on what subject is supposed to be preprocessed. Calling `queue` after `arguments` merely tells condor to submit a job with these arguments.
+
+Alright! Lea's ready to **submit her jobs**. She types:
+```bash 
+condor_submit preprocessing.submit
+```
+
+Et voila, condor just queued her first three subjects' pipelines as seperate jobs. Lea can look at **the current status** of her jobs again by typing:
+```bash
+condor_q
+```
+
+Here, she can see how many of her jobs are `done`, `running`, `idle`, or on `hold`. The meaning of done and running should be self-explanatory ;-) Idle means the job is waiting to be executed. This will definitely happen as soon as Lea submits all 30 subjects, since the computing cluster has only 15 nodes. 
+
+Hold means something prevents the jobs from running smoothely. One common cause is that **permissions** for the script are not liberal enough. Lea could try something like...
+
+```bash
+# give herself executing permissions (should be sufficient)
+chmod u+x preprocessing.py 
+# give herself and her group permissions
+chmod ug+x preprocessing.py
+# give everybody executing permissions (not recommended)
+chmod uga+x preprocessing.py
+```
+However, there are many thinigs that could go wrong - as always. So it's worth checking out her ".err" and ".log" files.
+
+Perfect. The next morning, Lea goes to her workstation and is pleased to see that her paralelization for 3 subjects worked fine. She could now just **copy and paste** the "arguments", "queue" lines in her submission file and change the "sub-blah" part of it. And let's be honest, I've definitely done that in the past... Just be sure you don't sneak in any typos ;-) 
+
+Sometims though, Lea might want to submit a ton of jobs or have something like nested paralelization (e.g. `sub-01 run-01`, `sub-1 run-02`, `sub-02 run-01`, ...). In these cases, it gets a bit trickier. One powerful trick is to write a **loop in a bash script**, which in turn generates a submission file. Let's say we'll call it `preprocessing_submitgen.sh`:
+
+```bash
+#!/usr/bin/env bash
+
+# generate the header, wich is the same for all subjects/runs.
+printf "universe = vanilla\n"
+printf "executable = /usr/bin/python3\n"
+
+# iterate over runs and subjects
+for run in 1 2; do
+  for sub in $(seq 1 30); do
+    printf "arguments = /home/lea/preprocessing.py sub-${sub} run-${run}\n"
+    printf "log       = ${sub}${run}.log\n"
+    printf "output    = ${sub}${run}.out\n"
+    printf "error     = ${sub}${run}.err\n"
+    printf "Queue\n\n"
+  done
+done
+```
+
+In a nutshell, this bash script will generate a standard output that looks like the submission file, if Lea had had the nerves to actually copy and paste all lines until all her combinations of subjects and runs were in there. She can pass this into the condor_submit command with a **pipe**:
+
+```bash
+bash preprocessing_submitgen.sh | condor_submit
+```
+
+And that's it! Lea can now submit her jobs and take a nap until her jobs are finished. And naturally, Luke and the other researchers can do the same with their jobs and be at ease, knowing condor will distribute all available resources between them.
+
+</p>

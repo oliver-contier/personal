@@ -6,7 +6,7 @@ output: html_document
 <br/>
 
 <a class="center">
-  <img src="images/me_professional.jpg" />
+  <img src="images/me_mps.jpg">
 </a>
 
 <br/>

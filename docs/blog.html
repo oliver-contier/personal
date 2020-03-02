@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>blog.utf8</title>
+
+<script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css">
+  pre:not([class]) {
+    background-color: white;
+  }
+</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+<style type="text/css">
+h1 {
+  font-size: 34px;
+}
+h1.title {
+  font-size: 38px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 16px;
+}
+h6 {
+  font-size: 12px;
+}
+.table th:not([align]) {
+  text-align: left;
+}
+</style>
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+code {
+  color: inherit;
+  background-color: rgba(0, 0, 0, 0.04);
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+</style>
+
+
+<style type="text/css">
+/* padding for bootstrap navbar */
+body {
+  padding-top: 51px;
+  padding-bottom: 40px;
+}
+/* offset scroll position for anchor links (for fixed navbar)  */
+.section h1 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h2 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h3 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h4 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h5 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.section h6 {
+  padding-top: 56px;
+  margin-top: -56px;
+}
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #ffffff;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script>
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark it active
+  menuAnchor.parent().addClass('active');
+
+  // if it's got a parent navbar menu mark it active as well
+  menuAnchor.closest('li.dropdown').addClass('active');
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "&#xe258;";
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Oliver Contier, M.Sc.</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="cv.html">CV</a>
+</li>
+<li>
+  <a href="publications.html">Publications</a>
+</li>
+<li>
+  <a href="research.html">The long story</a>
+</li>
+<li>
+  <a href="blog.html">Blog</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div class="fluid-row" id="header">
+
+
+
+
+</div>
+
+
+<p><br/> <br/></p>
+<div id="getting-started-with-htcondor-for-data-analysis" class="section level1">
+<h1>Getting started with HTCondor for data analysis</h1>
+<p><em>Oliver Contier</em></p>
+<p><em>2/28/2020</em> <br/> <br/></p>
+<p>I love analyzing data. It’s one of my favorite aspects of the job as doctoral student in cognitive neuroscience, and I have a hunch many scientists feel the same. Coming up with methods that make sense of the raw numbers coming out of our measurements can feel like detective work and feel intrinsically rewarding.</p>
+<p>However, the data we analyze is often too large for our laptops and run-times too long. So we migrate our data and analysis code to the computational cluster our university or institute is hosting. And here, everything is more complicated. The machinery you’re trying to use now is shared by a dozen or more people and you have to put in some extra effort and play by the rules to make things run.</p>
+<p>One common piece of software I’ve had to get my grips on and which “governs” computational clusters is HTCondor. I’ve learned to use it through the help of my colleagues and have passed my humble knowledge on to other colleagues since then. To make things easier, I thought I’d release a summary for everybody.</p>
+<p>Now, you’ll find <a href="https://research.cs.wisc.edu/htcondor/manual/" target="_blank">ample documentation</a> on the internet. You can find the relevant commands here along with some more detailed explanation. However - as with all good software - there is a ton of features which you might be confused by and which you’ll likely not need in the beginning. So, to get you started, I thought I’d walk through a basic example of how to make your analysis run with Condor.</p>
+<p><strong>Condor is a quite intelligent system that allows many users of a system to run computational jobs in parallel</strong>. It tries to distribute the available resources in a safe, efficient, and somewhat fair manner to all jobs submitted by different users. Think of the jobs as convoys of trucks that want to drive from A to B and the computational resources as all the available lanes on the highway. <strong>Condor is the traffic police.</strong> You might curse at it sometimes but in the end, it will make your life easier.</p>
+<p>After you’ve successfully submitted your jobs to condor, you can disconnect from the cluster, close the terminal, or set your workstation on fire. None of which will terminate your processes.</p>
+<p>Let’s imagine a scenario: Luke and Lea are both PhD students at a top-notch research institution. They work on different projects, but both want to use the computational cluster. <strong>Lea wants to run preprocessing on her fMRI data with 30 subjects</strong> and Luke wants to do … something else. The point is, they both want to do a lot of computations! The computing cluster has 15 nodes available, each of which has some fixed amount of memory.</p>
+<p>Before Luke or Lea get to work, they check what the weather is like today on the cluster. They open a terminal and type …</p>
+<pre class="bash"><code>condor_status</code></pre>
+<p>… which shows them how many computing nodes there are, and how many of them are still free or already in use. They can also type …</p>
+<pre class="bash"><code>condor_q</code></pre>
+<p>… which shows them if they themselves have some running jobs and what their status is. Adding the <code>--nobatch</code> flag lets them see all their jobs individually instead of a summary.</p>
+<p>Now, Lea gets to work. Her analysis is in a python file called <code>preprocessing.py</code>:</p>
+<pre class="python"><code>#! /usr/env/python
+
+import time
+import sys
+
+# the script gets the subject ID as an input argument
+subject_id = sys.argv[1]
+
+print(&#39;beep bleep bloop, starting preprocessing&#39;)
+
+time.wait(60*60*24)  # complicated calculations going on for 24 hours
+
+print(&#39;bing bong, finished subject: &#39;, subject_id)</code></pre>
+<p>This script executes her preprocessing job for a single subject. She has debugged her code thoroughly and is quite confident it works. She can run the preprocessing for subject <code>sub-01</code> by typing the following in the terminal:</p>
+<pre class="bash"><code>python preprocessing.py sub-01</code></pre>
+<p>Specifying the subject ID as the input argument for her script is important, as <strong>iterating over input arguments is a simple way to realize paralelization</strong>. And she really wansts to run the jobs for as many subjects as possible in parallel, as each one of them takes 24 hours to finish!</p>
+<p>Some more details on input arguments: Note how the python code sais <code>subject_id = sys.argv[1]</code>. sys.argv can grab the input arguments which the python executable received. <code>sys.argv[0]</code> represents the 0th argument (in our case “preprocessing.py”). <code>sys.argv[1]</code> represents the 1st argument (in our example <code>sub-01</code>). This is specific for python of course, but other languages/frameworks like bash or matlab could work in a similar manner.</p>
+<p>To run her jobs on the cluster, Lea does <strong>not</strong> execute her script directly. She writes a submission file for condor and calls it <code>preprocessing.submit</code>. The simplest version of such a file may look something like this:</p>
+<pre class="bash"><code>universe = vanilla
+executable = /usr/bin/python3  # She wants to run her script with this python version
+
+# She can specify where condor should write some text files for 
+# error messages, outputs, and logs of the submitted job status.
+
+error = /home/lea/preprocessing.err
+output = /home/lea/preprocessing.out
+log = /home/lea/preprocessing.log
+
+# Here is the important stuff for paralellization 
+arguments = /home/lea/preprocessing.py sub-01
+queue
+arguments = /home/lea/preprocessing.py sub-02
+queue
+arguments = /home/lea/preprocessing.py sub-03
+queue</code></pre>
+<p class="russiannovel">
+<p>Let’s unpack this a bit. You can leave the <code>universe</code> line alone for now. the <code>executable</code> is important and might be the python or matlab version you want to use to execute your script. <strong>However, executables can also be scripts you write yourself (e.g. a bash script, see <a href="https://github.com/oliver-contier/famface-temporal-dynamics/blob/master/analysis/extract_eigenvariate.submit" target="_blank">here</a>).</strong></p>
+<p><code>error</code>, <code>output</code>, and <code>log</code> are not mandatory, but I would recommend it. Here, condor will put the error messages that are thrown, the standard output of your script (e.g. print/log statements), and some logging detail on how the whole job submission went. Having these helps debugging immensely.</p>
+<p>The <code>arguments</code> and <code>queue</code> statements are - finally - for <strong>paralelization</strong>. You see how the first argument (or 0th argument in python’s way of counting) is always the path to Lea’s preprocessing script. The second argument (i.e. 1st in python) changes depending on what subject is supposed to be preprocessed. Calling <code>queue</code> after <code>arguments</code> merely tells condor to submit a job with these arguments.</p>
+<p>Alright! Lea’s ready to <strong>submit her jobs</strong>. She types:</p>
+<pre class="bash"><code>condor_submit preprocessing.submit</code></pre>
+<p>Et voila, condor just queued her first three subjects’ pipelines as seperate jobs. Lea can look at <strong>the current status</strong> of her jobs again by typing:</p>
+<pre class="bash"><code>condor_q</code></pre>
+<p>Here, she can see how many of her jobs are <code>done</code>, <code>running</code>, <code>idle</code>, or on <code>hold</code>. The meaning of done and running should be self-explanatory ;-) Idle means the job is waiting to be executed. This will definitely happen as soon as Lea submits all 30 subjects, since the computing cluster has only 15 nodes.</p>
+<p>Hold means something prevents the jobs from running smoothely. One common cause is that <strong>permissions</strong> for the script are not liberal enough. Lea could try something like…</p>
+<pre class="bash"><code># give herself executing permissions (should be sufficient)
+chmod u+x preprocessing.py 
+# give herself and her group permissions
+chmod ug+x preprocessing.py
+# give everybody executing permissions (not recommended)
+chmod uga+x preprocessing.py</code></pre>
+<p>However, there are many thinigs that could go wrong - as always. So it’s worth checking out her “.err” and “.log” files.</p>
+<p>Perfect. The next morning, Lea goes to her workstation and is pleased to see that her paralelization for 3 subjects worked fine. She could now just <strong>copy and paste</strong> the “arguments”, “queue” lines in her submission file and change the “sub-blah” part of it. And let’s be honest, I’ve definitely done that in the past… Just be sure you don’t sneak in any typos ;-)</p>
+<p>Sometims though, Lea might want to submit a ton of jobs or have something like nested paralelization (e.g. <code>sub-01 run-01</code>, <code>sub-1 run-02</code>, <code>sub-02 run-01</code>, …). In these cases, it gets a bit trickier. One powerful trick is to write a <strong>loop in a bash script</strong>, which in turn generates a submission file. Let’s say we’ll call it <code>preprocessing_submitgen.sh</code>:</p>
+<pre class="bash"><code>#!/usr/bin/env bash
+
+# generate the header, wich is the same for all subjects/runs.
+printf &quot;universe = vanilla\n&quot;
+printf &quot;executable = /usr/bin/python3\n&quot;
+
+# iterate over runs and subjects
+for run in 1 2; do
+  for sub in $(seq 1 30); do
+    printf &quot;arguments = /home/lea/preprocessing.py sub-${sub} run-${run}\n&quot;
+    printf &quot;log       = ${sub}${run}.log\n&quot;
+    printf &quot;output    = ${sub}${run}.out\n&quot;
+    printf &quot;error     = ${sub}${run}.err\n&quot;
+    printf &quot;Queue\n\n&quot;
+  done
+done</code></pre>
+<p>In a nutshell, this bash script will generate a standard output that looks like the submission file, if Lea had had the nerves to actually copy and paste all lines until all her combinations of subjects and runs were in there. She can pass this into the condor_submit command with a <strong>pipe</strong>:</p>
+<pre class="bash"><code>bash preprocessing_submitgen.sh | condor_submit</code></pre>
+<p>And that’s it! Lea can now submit her jobs and take a nap until her jobs are finished. And naturally, Luke and the other researchers can do the same with their jobs and be at ease, knowing condor will distribute all available resources between them.</p>
+</p>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.header').parent('thead').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open')
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
