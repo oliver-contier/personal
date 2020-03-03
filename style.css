@@ -40,3 +40,8 @@ h3 {font-family: Garamond, Georgia, serif;}
   margin-right:auto;
   text-align:justify
 }
+
+/* don't show author, title, and date specified in rmarkdown headers */
+.author,.title{
+    display: none;
+}

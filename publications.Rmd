@@ -1,5 +1,7 @@
 ---
 output: html_document
+author: Oliver Contier
+title: publications
 ---
 
 
@@ -9,7 +11,7 @@ output: html_document
 
 <br/>
 
-<p class="hangingindent"; charset="utf-8">
+<p class="hangingindent">
   Fritz, T. H., Sch&uuml;tte, F., Steixner, A., **Contier, O.**, Obrig, H., Villringer, A. (2019). Musical meaning modulates word acquisition. *Brain and Language*. <a href="https://doi.org/10.1016/j.bandl.2018.12.001"> https://doi.org/10.1016/j.bandl.2018.12.001</a>
 </p>
 

@@ -1,8 +1,7 @@
 ---
-#title: "My first blog entry"
-#author: "Oliver Contier"
-#date: "2/28/2020"
 output: html_document
+author: Oliver Contier
+title: blog
 ---
 <br/>
 <br/>
@@ -11,7 +10,7 @@ output: html_document
 
 *Oliver Contier*
 
-*2/28/2020*
+*3/3/2020*
 <br/>
 <br/>
 
