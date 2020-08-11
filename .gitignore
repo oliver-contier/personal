@@ -4,3 +4,5 @@
 .Ruserdata
 *.doc
 *.icloud
+legacy_code
+*.DS_STORE*
