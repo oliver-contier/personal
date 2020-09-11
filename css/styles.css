@@ -76,7 +76,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: #fff;
+  background-color: #ffffff;  /*TODO: global background (used to be #fff)*/
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -169,12 +169,12 @@ sup {
 }
 
 a {
-  color: #2D6161;
+  color: #2D6161;  /*TODO: hyperlink color (used to be #2D6161)*/
   text-decoration: none;
   background-color: transparent;
 }
 a:hover {
-  color: #824027;
+  color: #E2C770;  /*TODO: hyperlink hover over color*/
   text-decoration: underline;
 }
 
@@ -378,7 +378,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
-  color: #343a40;
+  color: #2E383D;  /*TODO: headings color*/
 }
 
 h1, .h1 {
@@ -522,7 +522,7 @@ mark,
 code {
   /* font-size: 87.5%; */
   /* color: #aab2c0; */
-  color: #da985c;
+  color: #E2C770;  /*TODO: inline code color*/
   /* padding: .15em; */
   /* background-color: #3a414f; */
   font-weight:bold;
@@ -549,7 +549,7 @@ pre {
   display: block;
   padding: 1.25em;
   font-size: 95.5%;
-  color: #aab2c0;
+  color: #aab2c0;  /*TODO: default code block color. more handmade code colors in the following classes (e.g. code-val)*/
 }
 pre code {
   font-size: inherit;
@@ -6136,7 +6136,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #2D6161 !important;
+  background-color: #2D6161 !important;  /*TODO: navbar background color (current 2D6161)*/
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
@@ -7557,6 +7557,7 @@ button.bg-dark:focus {
 .mb-0-h {
   padding-left: 50px;
   text-indent: -50px;
+  text-align: justify;
 }
 
 .ml-0,
@@ -9843,8 +9844,8 @@ button.bg-dark:focus {
 }
 
 .text-primary {
-  color: #2D6161 !important;
-  /*color: #bd5d38 !important;*/
+    color: #2D6161 !important;  /*TODO: Headline highlight color (should match navbar background) */
+  /*color: #2D6161 !important;*/
 }
 
 a.text-primary:hover, a.text-primary:focus {
@@ -10135,7 +10136,7 @@ p.lead {
   justify-content: center;
   height: 3.5rem;
   width: 3.5rem;
-  background-color: #495057;
+  background-color: #2D333A;  /*TODO: background of social icons*/
   color: #fff;
   border-radius: 100%;
   font-size: 1.5rem;
@@ -10145,7 +10146,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #2D6161;
+  background-color: #E2C770;  /*TODO: hover color social icons*/
 }
 
 .dev-icons {
