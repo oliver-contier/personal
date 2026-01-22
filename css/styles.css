@@ -10082,6 +10082,19 @@ p.lead {
   font-size: 1.5rem;
 }
 
+.about-tagline {
+  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+  letter-spacing: 0.02rem;
+  text-transform: none;
+  text-align: left;
+  color: #2E383D;
+  margin-top: 0.25rem;
+  margin-bottom: 1.25rem;
+}
+
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 800;
   letter-spacing: 0.05rem;
