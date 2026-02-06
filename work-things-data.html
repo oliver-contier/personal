@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta content="THINGS-data: large-scale multimodal datasets for object representations in brain and behavior — Oliver Contier" name="description"/>
+    <meta content="Oliver Contier" name="author"/>
+    <meta content="THINGS-data — Oliver Contier" property="og:title"/>
+    <meta content="Large-scale multimodal datasets for object representations in brain and behavior." property="og:description"/>
+    <meta content="website" property="og:type"/>
+    <meta content="https://olivercontier.com/work-things-data.html" property="og:url"/>
+    <meta content="light" name="color-scheme"/>
+    <title>THINGS-data — Oliver Contier</title>
+    <link href="assets/img/favicon_turtle.png" rel="icon" type="image/x-icon"/>
+    <link href="https://fonts.googleapis.com" rel="preconnect"/>
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet"/>
+</head>
+<body>
+<a class="skip-link" href="#content">Skip to content</a>
+
+<header class="site-header">
+    <a class="site-title" href="index.html">Oliver Contier</a>
+    <nav aria-label="Primary" class="site-nav">
+        <a href="index.html#work">Selected</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#background">Background &amp; activities</a>
+        <a href="index.html#publications">Publications</a>
+    </nav>
+</header>
+
+<main class="page" id="content">
+    <section class="section">
+        <p class="muted"><a href="index.html#work">← Selected work</a></p>
+        <div class="section-head" style="margin-top: 12px;">
+            <h1 class="page-title">THINGS-data: large-scale multimodal datasets for object representations in brain and behavior</h1>
+            <p class="meta">Hebart, M.N., Contier, O., Teichmann, L., et al. · eLife · 2023</p>
+        </div>
+
+        <div class="prose" style="margin-top: 24px;">
+            <p>
+                Understanding how the brain represents objects requires dense measurements across many objects and modalities. THINGS-data is a public collection of neuroimaging and behavioural data built for that purpose: large-scale brain responses with high spatial (fMRI) and temporal (MEG) resolution to thousands of natural object images, plus 4.7 million behavioural similarity judgments.
+            </p>
+            <figure class="work-fig">
+                <img src="https://iiif.elifesciences.org/lax:82580%2Felife-82580-fig1-v4.tif/full/1500,/0/default.jpg" alt="Overview of THINGS-data: fMRI, MEG and behavioural datasets" width="800" height="auto" loading="lazy"/>
+                <figcaption>Overview of THINGS-data (Hebart et al., eLife 2023; CC BY 4.0). <strong>a</strong> 
+                    Thousands of images from the THINGS object database were used to obtain responses in the brain (fMRI, MEG) and in behavior. 
+                    <strong>b</strong> Basic task in the neuroimaging experiments. <strong>c</strong> Odd-one-out behavioral similarity task. <strong>d</strong> 
+                    Additional fMRI datat: anatomy, localizers, resting state. <strong>e</strong> MEG: 272 channels record neural activation with high temporal resolution.</figcaption>
+            </figure>
+            <p>
+                The fMRI dataset covers 720 object concepts (8,740 images) over 12 sessions per participant; the MEG dataset covers all 1,854 THINGS concepts (22,248 images). The behavioural dataset was collected via crowdsourced odd-one-out triplets and yields a 66-dimensional embedding of how people perceive object similarity. All data are openly available with code and derivatives (e.g. single-trial response estimates, ROIs, quality metrics).
+            </p>
+            <p>
+                THINGS-data is the core release of the <a href="https://things-initiative.org" rel="noopener noreferrer" target="_blank">THINGS initiative</a>. It allows testing hypotheses at scale, replicating prior findings, and linking brain and behaviour across space and time—with an extensive and representative sample of objects.
+            </p>
+        </div>
+
+        <div class="actions" aria-label="Paper and resources" style="margin-top: 28px;">
+            <a class="btn btn-primary" href="https://doi.org/10.7554/eLife.82580" rel="noopener noreferrer" target="_blank">Paper (eLife)</a>
+            <a class="btn btn-primary" href="https://github.com/ViCCo-Group/THINGS-data" rel="noopener noreferrer" target="_blank">Code</a>
+            <a class="btn btn-primary" href="https://plus.figshare.com/collections/THINGS-data_A_multimodal_collection_of_large-scale_datasets_for_investigating_object_representations_in_brain_and_behavior/6161151" rel="noopener noreferrer" target="_blank">Data (Figshare)</a>
+            <a class="btn btn-primary" href="https://things-initiative.org" rel="noopener noreferrer" target="_blank">THINGS initiative</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="muted">© <span id="year"></span> Oliver Contier</p>
+    </footer>
+</main>
+
+<script>
+    document.getElementById("year").textContent = String(new Date().getFullYear());
+</script>
+</body>
+</html>

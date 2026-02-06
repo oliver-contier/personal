@@ -226,6 +226,24 @@ a:hover {
   background: rgba(255, 255, 255, 0.6);
 }
 
+.work-fig {
+  margin: 24px 0 32px;
+  max-width: 720px;
+}
+
+.work-fig img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid var(--border);
+}
+
+.work-fig figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
 .section {
   margin-top: 56px;
   padding-top: 56px;
@@ -280,40 +298,8 @@ a:hover {
   border: 1px solid var(--border);
   background: var(--panel);
   border-radius: 16px;
-  padding: 0;
-  overflow: hidden;
+  padding: 16px 16px 14px;
   transition: transform 140ms ease, background 140ms ease;
-}
-
-.card-inner {
-  display: block;
-  padding: 16px 16px 10px;
-  text-decoration: none;
-  color: inherit;
-}
-
-.card-inner:hover {
-  color: inherit;
-}
-
-.card-img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 5/3;
-  object-fit: cover;
-  margin: 0 0 14px;
-  border-radius: 12px;
-  border: 1px solid var(--border);
-}
-
-.card .meta,
-.card .tags,
-.card .links {
-  padding: 0 16px 14px;
-}
-
-.card .meta {
-  margin-top: 4px;
 }
 
 .card:hover {
