@@ -176,7 +176,7 @@ a:hover {
 .actions {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 8px;
   margin-top: 16px;
 }
 
@@ -184,8 +184,9 @@ a:hover {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  padding: 10px 14px;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.875rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: transparent;
@@ -210,18 +211,6 @@ a:hover {
   color: var(--bg);
 }
 
-.link-row {
-  margin-top: 12px;
-  color: var(--muted);
-}
-
-.link-row a {
-  color: inherit;
-}
-
-.link-row a:hover {
-  color: var(--accent);
-}
 
 .hero-aside img {
   border-radius: 18px;
@@ -367,6 +356,30 @@ a:hover {
 
 .list li p {
   margin: 8px 0 0;
+}
+
+.list-timeline {
+  list-style: none;
+  padding-left: 1.5rem;
+  border-left: 2px solid var(--border);
+  margin-left: 0;
+}
+
+.list-timeline li {
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+.list-timeline li::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 1px);
+  top: 0.55em;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
 }
 
 .details {
