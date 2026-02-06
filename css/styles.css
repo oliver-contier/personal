@@ -231,6 +231,15 @@ a:hover {
   max-width: 720px;
 }
 
+@media (max-width: 768px) {
+  .work-fig {
+    width: 100vw;
+    max-width: 100vw;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
+  }
+}
+
 .work-fig img {
   width: 100%;
   height: auto;
@@ -300,6 +309,8 @@ a:hover {
   border-radius: 16px;
   padding: 16px 16px 14px;
   transition: transform 140ms ease, background 140ms ease;
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .card:hover {
