@@ -71,9 +71,12 @@
 
         <div class="grid">
             <article class="card">
-                <h3>Distributed representations of behaviour-derived object dimensions in the human visual system</h3>
+                <a href="work-behaviour-dimensions.html" class="card-inner">
+                    <img class="card-img" src="assets/img/work-dimensions.jpg" alt="" width="400" height="240" loading="lazy"/>
+                    <h3>Distributed representations of behaviour-derived object dimensions in the human visual system</h3>
+                    <p class="desc">We mapped dimensions from human similarity judgments onto brain activity. The result: object vision is organized along continuous, behaviourally relevant dimensions across visual cortex—not only by category—and these dimensions predict brain responses better than categories do.</p>
+                </a>
                 <p class="meta">Nature Human Behaviour · 2024</p>
-                <p class="desc">A comprehensive characterization of how the brain organizes our understanding of the objects we see.</p>
                 <div class="tags" aria-label="Tags">
                     <span>object vision</span><span>fMRI</span><span>behavior</span>
                 </div>
@@ -83,9 +86,12 @@
             </article>
 
             <article class="card">
-                <h3>THINGS-data: large-scale multimodal datasets for object representations in brain and behavior</h3>
+                <a href="work-things-data.html" class="card-inner">
+                    <img class="card-img" src="assets/img/work-things-data.jpg" alt="" width="400" height="240" loading="lazy"/>
+                    <h3>THINGS-data: large-scale multimodal datasets for object representations in brain and behavior</h3>
+                    <p class="desc">Open fMRI, MEG, and 4.7 million similarity judgments for thousands of object images. The data support hypothesis-driven and data-driven work at scale and are the core release of the THINGS initiative for reproducible object-representation research.</p>
+                </a>
                 <p class="meta">eLife · 2023</p>
-                <p class="desc">Open datasets for studying object representations across brain (fMRI, MEG) and behavior.</p>
                 <div class="tags" aria-label="Tags">
                     <span>open data</span><span>fMRI</span><span>MEG</span><span>behavior</span>
                 </div>
@@ -295,8 +301,12 @@
 </main>
 
 <script>
-    // Keep JS tiny and optional.
     document.getElementById("year").textContent = String(new Date().getFullYear());
+    document.querySelectorAll(".site-nav a[href^='#']").forEach(function (a) {
+        a.addEventListener("click", function () {
+            document.getElementById("nav-toggle").checked = false;
+        });
+    });
 </script>
 </body>
 </html>
