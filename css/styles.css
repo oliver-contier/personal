@@ -643,7 +643,7 @@ a:hover {
 
   .hero-content {
     max-width: 60%;
-    padding: var(--space-3) var(--space-4);
+    padding: var(--space-4) var(--space-5);
   }
 
   .about-content {
@@ -667,8 +667,8 @@ a:hover {
 @media (max-width: 640px) {
   .hero {
     margin: 0 calc(-1 * var(--page-padding-inline));
-    padding: var(--space-6) var(--page-padding-inline);
-    min-height: clamp(300px, 40vh, 400px);
+    padding: 0;
+    min-height: clamp(350px, 50vh, 450px);
   }
 
   .hero-banner-img {
@@ -678,13 +678,14 @@ a:hover {
   .hero-content {
     max-width: 100%;
     left: 0;
+    right: 0;
     margin-left: 0;
-    padding: var(--space-3);
+    padding: var(--space-6) var(--page-padding-inline);
     background: rgba(250, 245, 242, 0.95);
   }
 
   .about-portrait img {
-    width: 160px;
+    width: 240px;
   }
 
   .section-head h2 {
