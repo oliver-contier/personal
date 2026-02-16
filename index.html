@@ -71,7 +71,7 @@
         <div class="grid">
             <article class="card">
                 <h3><a href="work-behaviour-dimensions.html">Distributed representations of behaviour-derived object dimensions in the human visual system</a></h3>
-                <p class="meta">Nature Human Behaviour · 2024</p>
+                <p class="meta">Nature Human Behaviour · 2024 <span data-metrics-doi="10.1038/s41562-024-01980-y" style="display: none;"></span></p>
                 <p class="desc">A comprehensive characterization of how the brain organizes our understanding of the objects we see.</p>
                 <div class="tags" aria-label="Tags">
                     <span>object vision</span><span>fMRI</span><span>behavior</span>
@@ -83,7 +83,7 @@
 
             <article class="card">
                 <h3><a href="work-things-data.html">THINGS-data: large-scale multimodal datasets for object representations in brain and behavior</a></h3>
-                <p class="meta">eLife · 2023</p>
+                <p class="meta">eLife · 2023 <span data-metrics-doi="10.7554/eLife.82580" style="display: none;"></span> <span data-metrics-figshare="6161151" style="display: none;"></span></p>
                 <p class="desc">Open datasets for studying object representations across brain (fMRI, MEG) and behavior.</p>
                 <div class="tags" aria-label="Tags">
                     <span>open data</span><span>fMRI</span><span>MEG</span><span>behavior</span>
@@ -150,6 +150,16 @@
                         <a href="https://www.daad.de/en/studying-in-germany/scholarships/" rel="noopener noreferrer" target="_blank">PROMOS</a> scholarship, <a href="https://www.daad.de/en/" rel="noopener noreferrer" target="_blank">German Academic Exchange Service (DAAD)</a> · 2017
                     </li>
                 </ul>
+            </div>
+
+            <div class="item">
+                <h3 class="h3">Impact metrics</h3>
+                <p style="margin-top: var(--space-2);">
+                    494 citations<span class="dot" style="margin: 0 0.5rem;">·</span>h-index 6<span class="dot" style="margin: 0 0.5rem;">·</span>1.3k+ dataset downloads
+                </p>
+                <p class="muted" style="margin-top: var(--space-2); font-size: 0.75rem; opacity: 0.5; line-height: 1.2;">
+                    Last updated: <span id="metrics-date"></span>
+                </p>
             </div>
 
             <div class="item">
@@ -300,6 +310,15 @@
 
 <script>
     document.getElementById("year").textContent = String(new Date().getFullYear());
+    
+    // Set metrics date
+    const metricsDateEl = document.getElementById("metrics-date");
+    if (metricsDateEl) {
+        const now = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        metricsDateEl.textContent = now.toLocaleDateString('en-US', options);
+    }
+    
     document.querySelectorAll(".site-nav a[href^='#']").forEach(function (a) {
         a.addEventListener("click", function () {
             document.getElementById("nav-toggle").checked = false;
