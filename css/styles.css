@@ -235,6 +235,11 @@ a:hover {
   margin: 0 0 var(--space-3);
 }
 
+.hero-highlight {
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 .hero-tagline {
   margin: 0;
   font-size: var(--text-lg);
@@ -519,6 +524,13 @@ a:hover {
   height: var(--dot-size);
   border-radius: 50%;
   background: var(--border);
+}
+
+.thesis-note {
+  display: inline-block;
+  margin-top: 0.15rem;
+  font-size: var(--text-sm);
+  color: rgba(17, 17, 17, 0.58);
 }
 
 .details {
