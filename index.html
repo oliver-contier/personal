@@ -258,6 +258,7 @@
       .cards { grid-template-columns: 1fr; }
     }
     @media (max-width: 640px) {
+      :root { --display: clamp(36px, 10.5vw, 56px); }
       .nav-links { display: none; }
       .nav-burger { display: block; }
       .hero-brain { opacity: 0.03; right: -100px; }
