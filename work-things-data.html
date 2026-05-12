@@ -1,77 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
-    <meta content="THINGS-data: large-scale multimodal datasets for object representations in brain and behavior — Oliver Contier" name="description"/>
-    <meta content="Oliver Contier" name="author"/>
-    <meta content="THINGS-data — Oliver Contier" property="og:title"/>
-    <meta content="Large-scale multimodal datasets for object representations in brain and behavior." property="og:description"/>
-    <meta content="website" property="og:type"/>
-    <meta content="https://olivercontier.com/work-things-data.html" property="og:url"/>
-    <meta content="light" name="color-scheme"/>
-    <title>THINGS-data — Oliver Contier</title>
-    <link href="assets/img/favicon_turtle.png" rel="icon" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com" rel="preconnect"/>
-    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect"/>
-    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
-    <link href="css/styles.css" rel="stylesheet"/>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>THINGS-data — Oliver Contier</title>
+  <meta name="description" content="THINGS-data: large-scale multimodal datasets for object representations in brain and behavior — Oliver Contier"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="icon" type="image/png" sizes="256x256" href="assets/favicon-256.png">
+  <link rel="apple-touch-icon" href="assets/favicon-256.png">
+  <link rel="stylesheet" href="work.css">
 </head>
 <body>
-<a class="skip-link" href="#content">Skip to content</a>
 
-<header class="site-header">
-    <a class="site-title" href="index.html">Oliver Contier</a>
-    <nav aria-label="Primary" class="site-nav">
-        <a href="index.html#work">Selected</a>
-        <a href="index.html#about">About</a>
-        <a href="index.html#background">Background &amp; activities</a>
-        <a href="index.html#publications">Publications</a>
-    </nav>
+<header>
+  <nav class="nav">
+    <div class="nav-left">
+      <span class="nav-dot">·</span>
+      <a class="nav-name" href="Redesign D.html">Oliver Contier</a>
+    </div>
+    <div class="nav-links">
+      <a href="Redesign D.html#work">Research</a>
+      <a href="Redesign D.html#about">About</a>
+      <a href="Redesign D.html#background">Background</a>
+      <a href="Redesign D.html#publications">Publications</a>
+    </div>
+  </nav>
 </header>
 
-<main class="page" id="content">
-    <section class="section">
-        <p class="muted"><a href="index.html#work">← Selected work</a></p>
-        <div class="section-head">
-            <h1 class="page-title">THINGS-data: large-scale multimodal datasets for object representations in brain and behavior</h1>
-            <p class="meta">Hebart, M.N., Contier, O., Teichmann, L., et al. · eLife · 2023</p>
-        </div>
+<section class="article-hero">
+  <a class="breadcrumb reveal" href="Redesign D.html#work">
+    <span class="arrow">←</span> Selected work
+  </a>
+  <div class="article-meta-top reveal">
+    <span class="meta-journal">eLife</span>
+    <span class="meta-year">2023</span>
+    <div class="meta-tags">
+      <span class="meta-tag">open data</span>
+      <span class="meta-tag">fMRI</span>
+      <span class="meta-tag">MEG</span>
+      <span class="meta-tag">behavior</span>
+    </div>
+  </div>
+  <h1 class="article-title reveal reveal-d1">
+    <span class="em">THINGS-data</span>: large-scale multimodal datasets for object representations in brain and behavior
+  </h1>
+  <p class="article-byline reveal reveal-d2">
+    <span class="au">Hebart, M.N.</span>*, <span class="au">Contier, O.</span>*, <span class="au">Teichmann, L.</span>*, Rockter, A., Zheng, C.Y., Kidder, A., Corriveau, A., Vaziri-Pashkam, M., Baker, C.I. &nbsp;<span style="color:var(--muted)">(* equal contribution)</span>
+  </p>
+</section>
 
-        <div class="prose">
-            <p>
-                Understanding how the brain represents objects requires dense measurements across many objects and modalities. THINGS-data is a public collection of neuroimaging and behavioural data built for that purpose: large-scale brain responses with high spatial (fMRI) and temporal (MEG) resolution to thousands of natural object images, plus 4.7 million behavioural similarity judgments.
-            </p>
-            <figure class="work-fig">
-                <img src="https://iiif.elifesciences.org/lax:82580%2Felife-82580-fig1-v4.tif/full/1500,/0/default.jpg" alt="Overview of THINGS-data: fMRI, MEG and behavioural datasets" width="800" height="auto" loading="lazy"/>
-                <figcaption>Overview of THINGS-data (Hebart et al., eLife 2023; CC BY 4.0). <strong>a</strong> 
-                    Thousands of images from the THINGS object database were used to obtain responses in the brain (fMRI, MEG) and in behavior. 
-                    <strong>b</strong> Basic task in the neuroimaging experiments. <strong>c</strong> Odd-one-out behavioral similarity task. <strong>d</strong> 
-                    Additional fMRI datat: anatomy, localizers, resting state. <strong>e</strong> MEG: 272 channels record neural activation with high temporal resolution.</figcaption>
-            </figure>
-            <p>
-                The fMRI dataset covers 720 object concepts (8,740 images) over 12 sessions per participant; the MEG dataset covers all 1,854 THINGS concepts (22,248 images). The behavioural dataset was collected via crowdsourced odd-one-out triplets and yields a 66-dimensional embedding of how people perceive object similarity. All data are openly available with code and derivatives (e.g. single-trial response estimates, ROIs, quality metrics).
-            </p>
-            <p>
-                THINGS-data is the core release of the <a href="https://things-initiative.org" rel="noopener noreferrer" target="_blank">THINGS initiative</a>. It allows testing hypotheses at scale, replicating prior findings, and linking brain and behaviour across space and time—with an extensive and representative sample of objects.
-            </p>
-        </div>
+<article class="article-body">
+  <p class="lede reveal">
+    Understanding how the brain represents objects requires <span class="em">dense measurements</span> across many objects and modalities. THINGS-data is a public collection of neuroimaging and behavioural data built for that purpose.
+  </p>
 
-        <div class="actions" aria-label="Paper and resources" style="margin-top: 28px;">
-            <a class="btn btn-primary" href="https://doi.org/10.7554/eLife.82580" rel="noopener noreferrer" target="_blank">Paper (eLife)</a>
-            <a class="btn btn-primary" href="https://github.com/ViCCo-Group/THINGS-data" rel="noopener noreferrer" target="_blank">Code</a>
-            <a class="btn btn-primary" href="https://plus.figshare.com/collections/THINGS-data_A_multimodal_collection_of_large-scale_datasets_for_investigating_object_representations_in_brain_and_behavior/6161151" rel="noopener noreferrer" target="_blank">Data (Figshare)</a>
-            <a class="btn btn-primary" href="https://things-initiative.org" rel="noopener noreferrer" target="_blank">THINGS initiative</a>
-        </div>
-    </section>
+  <p class="reveal">
+    The collection pairs large-scale brain responses with high spatial (fMRI) and temporal (MEG) resolution to thousands of natural object images, alongside 4.7 million behavioural similarity judgments. All datasets are openly available with code and derivatives — single-trial response estimates, ROIs, quality metrics, embeddings.
+  </p>
 
-    <footer class="footer">
-        <p class="muted">© <span id="year"></span> Oliver Contier</p>
-    </footer>
-</main>
+  <div class="wide">
+    <figure class="figure reveal">
+      <img src="assets/fig-things-1.jpg" alt="Overview of THINGS-data: fMRI, MEG and behavioural datasets"/>
+      <figcaption>
+        <span class="fignum">Fig 1</span>
+        <span><b>Overview of THINGS-data.</b> (a) Thousands of images from the THINGS object database were used to obtain responses in the brain (fMRI, MEG) and in behavior. (b) Basic task in the neuroimaging experiments. (c) Odd-one-out behavioral similarity task. (d) Additional fMRI: anatomy, localizers, resting state. (e) MEG: 272 channels record neural activation with high temporal resolution. Hebart et al., <em>eLife</em> 2023 · CC BY 4.0</span>
+      </figcaption>
+    </figure>
+  </div>
+
+  <h2 class="reveal">What's inside</h2>
+
+  <div class="statstrip reveal">
+    <div><span class="n">720</span><span class="l">fMRI concepts · 12 sessions</span></div>
+    <div><span class="n">8,740</span><span class="l">fMRI images</span></div>
+    <div><span class="n">1,854</span><span class="l">MEG concepts</span></div>
+    <div><span class="n">22,248</span><span class="l">MEG images</span></div>
+  </div>
+
+  <p class="reveal">
+    The fMRI dataset covers 720 object concepts (8,740 images) over 12 sessions per participant. The MEG dataset spans all 1,854 THINGS concepts (22,248 images). The behavioural dataset was collected via crowdsourced odd-one-out triplets and yields a 66-dimensional embedding of how people perceive object similarity.
+  </p>
+
+  <div class="callout reveal">
+    <span class="callout-label">Why it matters</span>
+    THINGS-data is the core release of the <a href="https://things-initiative.org" target="_blank" rel="noopener">THINGS initiative</a>. It allows testing hypotheses at scale, replicating prior findings, and linking brain and behaviour across space and time — with an extensive and representative sample of objects.
+  </div>
+
+  <div class="actions reveal">
+    <a class="btn btn-primary" href="https://doi.org/10.7554/eLife.82580" target="_blank" rel="noopener">Read the paper <span class="arrow">→</span></a>
+    <a class="btn btn-outline" href="https://github.com/ViCCo-Group/THINGS-data" target="_blank" rel="noopener">Code on GitHub</a>
+    <a class="btn btn-outline" href="https://plus.figshare.com/collections/THINGS-data_A_multimodal_collection_of_large-scale_datasets_for_investigating_object_representations_in_brain_and_behavior/6161151" target="_blank" rel="noopener">Data (Figshare)</a>
+    <a class="btn btn-outline" href="https://things-initiative.org" target="_blank" rel="noopener">THINGS initiative</a>
+  </div>
+</article>
+
+<section class="next-up">
+  <div class="next-up-label">Next in selected work</div>
+  <a class="next-card reveal" href="work-behaviour-dimensions.html">
+    <div class="nc-top">
+      <span class="nc-journal">Nature Human Behaviour</span>
+      <span class="nc-year">2024</span>
+    </div>
+    <div class="nc-title">Distributed representations of behaviour-derived object dimensions in the human visual system</div>
+    <span class="nc-arrow">Read →</span>
+  </a>
+</section>
+
+<footer>
+  <p>© <span id="year"></span> Oliver Contier</p>
+  <div class="footer-links">
+    <a href="mailto:oliver.contier@maxplanckschools.de">Email</a>
+    <a href="https://scholar.google.com/scholar?q=Oliver+Contier" target="_blank" rel="noopener">Scholar</a>
+    <a href="https://orcid.org/0000-0002-2983-4709" target="_blank" rel="noopener">ORCID</a>
+    <a href="https://github.com/oliver-contier/" target="_blank" rel="noopener">GitHub</a>
+  </div>
+</footer>
 
 <script>
-    document.getElementById("year").textContent = String(new Date().getFullYear());
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const io = new IntersectionObserver((es) => {
+    es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 </script>
 </body>
 </html>
