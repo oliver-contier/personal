@@ -900,7 +900,7 @@
         ctx.shadowBlur = inBrain ? 4 : 7 + toBrainT*3;
         ctx.beginPath();
         ctx.arc(x, y, d.radius, 0, Math.PI*2);
-        ctx.fillStyle = `rgba(${d.r},${d.g},${d.b},${inBrain?0.85:0.68})`;
+        ctx.fillStyle = `rgba(${d.r},${d.g},${d.b},${inBrain?0.65:0.5})`;
         ctx.fill();
       });
       ctx.shadowBlur = 0;
