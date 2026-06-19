@@ -117,6 +117,8 @@
     /* ── Sections ── */
     .section { padding: clamp(56px, 7vw, 96px) var(--px); border-top: 1px solid var(--border); }
     .section-header { display: flex; align-items: baseline; gap: 20px; margin-bottom: clamp(32px, 4vw, 52px); }
+    .section-header.has-action { justify-content: space-between; align-items: center; }
+    .section-heading { display: flex; align-items: baseline; gap: 20px; }
     .section-num { font-family: 'Syne', sans-serif; font-size: clamp(52px, 6vw, 88px); font-weight: 800; color: rgba(94,45,216,0.1); line-height: 1; }
     .section-title { font-family: 'Syne', sans-serif; font-size: clamp(22px, 2.4vw, 30px); font-weight: 700; color: var(--fg); }
 
@@ -216,6 +218,7 @@
     .pub-list li em { color: var(--fg); font-style: italic; }
     .pub-list li a { color: var(--accent); text-decoration: none; font-weight: 500; }
     .pub-list li a:hover { text-decoration: underline; }
+    .pub-note { display: block; margin-top: 4px; font-size: 12px; color: var(--muted); }
 
     /* ── Footer ── */
     footer { padding: clamp(32px, 4vw, 48px) var(--px); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; gap: 16px; flex-wrap: wrap; }
@@ -274,6 +277,7 @@
       .hero-brain { opacity: 0.03; right: -100px; }
       .hero-stats { gap: 20px; flex-wrap: wrap; }
       .stat-num { font-size: 32px; }
+      .section-header.has-action { align-items: flex-start; flex-direction: column; gap: 18px; }
     }
   </style>
 </head>
@@ -398,9 +402,12 @@
 
 <!-- Background -->
 <section class="section" id="background">
-  <div class="section-header reveal">
-    <span class="section-num">03</span>
-    <h2 class="section-title">Background &amp; Activities</h2>
+  <div class="section-header has-action reveal">
+    <div class="section-heading">
+      <span class="section-num">03</span>
+      <h2 class="section-title">Background &amp; Activities</h2>
+    </div>
+    <a href="assets/CV_Contier.pdf" class="btn btn-primary" download>Download CV</a>
   </div>
   <div class="bg-grid">
     <div class="bg-col">
@@ -517,17 +524,17 @@
       <div class="pub-section">
         <h3>Peer-reviewed</h3>
         <ul class="pub-list">
-          <li>St-Laurent, M., Pinsard, B., Contier, O., et al. (2026). <a href="https://doi.org/10.1038/s41597-026-06591-y" target="_blank" rel="noopener">CNeuroMod-THINGS, a densely-sampled fMRI dataset for visual neuroscience.</a> <em>Scientific Data, 13</em>(141).</li>
-          <li>Contier, O., Baker, C.I. &amp; Hebart, M.N. (2024). <a href="https://doi.org/10.1038/s41562-024-01980-y" target="_blank" rel="noopener">Distributed representations of behaviour-derived object dimensions in the human visual system.</a> <em>Nature Human Behaviour.</em></li>
-          <li>Kalyani, A., Contier, O., et al. (2023). <a href="https://doi.org/10.1016/j.neuroimage.2023.120430" target="_blank" rel="noopener">Reduced dimension stimulus decoding and column-based modeling reveal architectural differences of primary somatosensory finger maps between younger and older adults.</a> <em>NeuroImage, 283</em>(120430).</li>
-          <li>Hebart, M.N.*, Contier, O.*, Teichmann, L.*, et al. (2023). <a href="https://doi.org/10.7554/eLife.82580" target="_blank" rel="noopener">THINGS-data, a multimodal collection of large-scale datasets for investigating object representations in human brain and behavior.</a> <em>eLife</em>. 12:e82580.</li>
+          <li>St-Laurent, M., Pinsard, B., <strong>Contier, O.</strong>, et al. (2026). <a href="https://doi.org/10.1038/s41597-026-06591-y" target="_blank" rel="noopener">CNeuroMod-THINGS, a densely-sampled fMRI dataset for visual neuroscience.</a> <em>Scientific Data, 13</em>(141).</li>
+          <li><strong>Contier, O.</strong>, Baker, C.I. &amp; Hebart, M.N. (2024). <a href="https://doi.org/10.1038/s41562-024-01980-y" target="_blank" rel="noopener">Distributed representations of behaviour-derived object dimensions in the human visual system.</a> <em>Nature Human Behaviour.</em></li>
+          <li>Kalyani, A., <strong>Contier, O.</strong>, et al. (2023). <a href="https://doi.org/10.1016/j.neuroimage.2023.120430" target="_blank" rel="noopener">Reduced dimension stimulus decoding and column-based modeling reveal architectural differences of primary somatosensory finger maps between younger and older adults.</a> <em>NeuroImage, 283</em>(120430).</li>
+          <li>Hebart, M.N.*, <strong>Contier, O.*</strong>, Teichmann, L.*, et al. (2023). <a href="https://doi.org/10.7554/eLife.82580" target="_blank" rel="noopener">THINGS-data, a multimodal collection of large-scale datasets for investigating object representations in human brain and behavior.</a> <em>eLife</em>. 12:e82580.<span class="pub-note">* shared first authorship</span></li>
           <li>Fritz, T. H., et al. (2019). <a href="https://doi.org/10.1016/j.bandl.2018.12.001" target="_blank" rel="noopener">Musical meaning modulates word acquisition.</a> <em>Brain and Language, 190</em>(3).</li>
-          <li>Fritz, T. H., Bowling, D. L., Contier, O., et al. (2018). <a href="https://doi.org/10.3389/fpsyg.2017.02312" target="_blank" rel="noopener">Musical agency during exercise decreases pain.</a> <em>Frontiers in Psychology, 8</em>(2312).</li>
-          <li>Sharifian, F., Contier, O., et al. (2017). <a href="https://doi.org/10.3758/s13414-017-1397-3" target="_blank" rel="noopener">Reward modulation of contextual cueing.</a> <em>Attention, Perception, &amp; Psychophysics</em>, 79(7).</li>
+          <li>Fritz, T. H., Bowling, D. L., <strong>Contier, O.</strong>, et al. (2018). <a href="https://doi.org/10.3389/fpsyg.2017.02312" target="_blank" rel="noopener">Musical agency during exercise decreases pain.</a> <em>Frontiers in Psychology, 8</em>(2312).</li>
+          <li>Sharifian, F., <strong>Contier, O.</strong>, et al. (2017). <a href="https://doi.org/10.3758/s13414-017-1397-3" target="_blank" rel="noopener">Reward modulation of contextual cueing.</a> <em>Attention, Perception, &amp; Psychophysics</em>, 79(7).</li>
         </ul>
       </div>
       <div class="pub-section">
-        <h3>Conference posters &amp; talks</h3>
+        <h3>Selected conference contributions</h3>
         <ul class="pub-list">
           <li>Contier, O., et al. (2023). <a href="https://doi.org/10.1167/jov.23.9.5356" target="_blank" rel="noopener">Revealing interpretable object dimensions from a high-throughput model of the fusiform face area.</a> <em>Journal of Vision, 23(23), 5356.</em></li>
           <li>Stoinski, L. M., Contier, O., et al. (2023). <a href="https://doi.org/10.1167/jov.23.9.5072" target="_blank" rel="noopener">Revisiting the animacy, size, and curvature organization of human visual cortex.</a> <em>Journal of Vision, 23(23), 5072.</em></li>
@@ -544,14 +551,6 @@
 <!-- Footer -->
 <footer>
   <p>© <span id="year"></span> Oliver Contier</p>
-  <div class="footer-links">
-    <a href="mailto:oliver.contier@maxplanckschools.de">Email</a>
-    <a href="https://scholar.google.com/scholar?q=Oliver+Contier" target="_blank" rel="noopener">Scholar</a>
-    <a href="https://orcid.org/0000-0002-2983-4709" target="_blank" rel="noopener">ORCID</a>
-    <a href="https://github.com/oliver-contier/" target="_blank" rel="noopener">GitHub</a>
-    <a href="https://twitter.com/OliverContier" target="_blank" rel="noopener">Twitter</a>
-    <a href="https://www.linkedin.com/in/oliver-contier/" target="_blank" rel="noopener">LinkedIn</a>
-  </div>
 </footer>
 
 <!-- Tweaks panel -->
